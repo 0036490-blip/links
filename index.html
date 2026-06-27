@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Владимир Соловьёв · Системный анализ</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:'Segoe UI',system-ui,-apple-system,sans-serif;
+    background:linear-gradient(160deg,#0b1a3a 0%,#142a5c 55%,#1e3a7a 100%);
+    min-height:100vh; color:#fff; display:flex; justify-content:center;
+    padding:40px 18px;
+  }
+  .wrap{ width:100%; max-width:460px; }
+  .ava{
+    width:104px; height:104px; border-radius:50%; margin:0 auto 18px;
+    background:linear-gradient(135deg,#2b6cb0,#0b1a3a);
+    display:flex; align-items:center; justify-content:center;
+    font-size:40px; font-weight:800; color:#fff;
+    border:3px solid rgba(255,255,255,.25); overflow:hidden;
+  }
+  .ava img{ width:100%; height:100%; object-fit:cover; }
+  h1{ text-align:center; font-size:24px; font-weight:800; }
+  .role{ text-align:center; color:#9db8e8; font-size:15px; margin:6px 0 4px; }
+  .bio{ text-align:center; color:#c7d6ee; font-size:14px; line-height:1.5; margin:10px 6px 26px; }
+  a.btn{
+    display:flex; align-items:center; gap:14px;
+    background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.14);
+    border-radius:16px; padding:16px 18px; margin-bottom:14px;
+    color:#fff; text-decoration:none; font-size:16px; font-weight:600;
+    transition:.15s; backdrop-filter:blur(6px);
+  }
+  a.btn:hover{ background:rgba(255,255,255,.16); transform:translateY(-1px); }
+  a.btn .ic{ width:40px; height:40px; border-radius:10px; flex:0 0 40px;
+    display:flex; align-items:center; justify-content:center; font-size:20px; }
+  a.btn .t{ display:flex; flex-direction:column; }
+  a.btn .t small{ font-weight:400; color:#a9bfe2; font-size:12px; margin-top:2px; }
+  .tg .ic{ background:#229ED9; }
+  .vk .ic{ background:#0077FF; }
+  .yt .ic{ background:#FF0000; }
+  .pin .ic{ background:#E60023; }
+  .course .ic{ background:linear-gradient(135deg,#3DC97F,#1f9e5e); }
+  .gloss .ic{ background:linear-gradient(135deg,#C9A84C,#a07f2e); }
+  .price{ margin-left:auto; background:#C9A84C; color:#1a1300; font-size:13px;
+    font-weight:800; padding:4px 10px; border-radius:20px; }
+  footer{ text-align:center; color:#7e93bd; font-size:12px; margin-top:22px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="ava"><!-- <img src="avatar.jpg"> --><span>ВС</span></div>
+    <h1>Владимир Соловьёв</h1>
+    <div class="role">Системный анализ с нуля</div>
+    <div class="bio">Учу системному анализу простым языком. Шпаргалки, разборы ТЗ и API, реальные кейсы. Выбирай площадку 👇</div>
+
+    <a class="btn tg" href="https://t.me/solo_teach">
+      <span class="ic">✈️</span>
+      <span class="t">Telegram-канал<small>Главное: уроки, шпаргалки, разборы</small></span>
+    </a>
+
+    <a class="btn vk" href="https://vk.com/solo_teach_me">
+      <span class="ic">🅥</span>
+      <span class="t">ВКонтакте<small>Сообщество и посты</small></span>
+    </a>
+
+    <a class="btn yt" href="https://www.youtube.com/@solo_teach">
+      <span class="ic">▶</span>
+      <span class="t">YouTube<small>Видео-уроки и разборы</small></span>
+    </a>
+
+    <a class="btn pin" href="https://ru.pinterest.com/ben301087/">
+      <span class="ic">📌</span>
+      <span class="t">Pinterest<small>Карточки-шпаргалки</small></span>
+    </a>
+
+    <a class="btn course" href="https://new-sa.ru">
+      <span class="ic">🎓</span>
+      <span class="t">Курс «Системный анализ с нуля»<small>Полное обучение на new-sa.ru</small></span>
+    </a>
+
+    <!-- TODO: когда появится прямая ссылка на покупку — заменить href на неё -->
+    <a class="btn gloss" href="https://t.me/solo_teach">
+      <span class="ic">📖</span>
+      <span class="t">Словарь IT-терминов 200+<small>Справочник джуна · купить в Telegram</small></span>
+      <span class="price">99 ₽</span>
+    </a>
+
+    <footer>new-sa.ru · @solo_teach</footer>
+  </div>
+</body>
+</html>
